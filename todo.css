@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(26, 1, 52);
+    color: #fff;
+}
+.todo-container{
+    width: 800px;
+    margin: 30px auto 0;
+    background-color: #ffffff00;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+.todo-container .add-task{
+    padding: 15px;
+    background-color: rgba(26, 1, 52, 0);
+    position: relative;
+
+} 
+.todo-container .add-task .header{
+    color: #fff;
+    padding: 10px 0 ;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.todo-container .add-task input{
+    display: inline-block;
+    background-color: rgba(26, 1, 52, 0);
+    border: 2px solid #fff;
+    border-radius: 7px;
+    padding: 10px 15px;
+    width: calc(100% - 100px);
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+.todo-container .add-task .plus{
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+    line-height: 40px;
+    transition: 0.7s ease;
+}
+.todo-container .add-task .plus:hover{
+    transform: scale(1.1);
+    letter-spacing: 3px;
+    background-color: #fff;
+    color: blueviolet;
+}
+.todo-container .tasks-content{
+    padding: 15px;
+}
+
+.todo-container .tasks-content .no-tasks-message{
+    font-size: 15px;
+
+    color: #777;
+}
+.todo-container .tasks-content > span{
+    display:block;
+    background-color: #02020256;
+    color: #fff;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.deletee{
+    float: right;
+    margin-top: -7px;
+    padding: 4px 10px ;
+    color: crimson;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left:10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.deletee:hover{
+    color: rgba(112, 7, 28, 0.789);
+}
+.complete{
+    float: right;
+    margin-top: -7px;
+    padding: 4px 10px ;
+    color: olivedrab;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left:10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #77777700;
+    border: none;
+    outline: none;
+}
+.complete:hover{
+    color: rgba(92, 132, 12, 0.789);
+}
+.Edit{
+    float: right;
+    margin-top: -7px;
+    padding: 4px 10px ;
+    color: goldenrod;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left:10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.Edit:hover{
+    color: rgba(157, 114, 5, 0.789);
+}
+#finished{
+    text-decoration: line-through;
+}
+.tasks-state{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 20px;
+
+}
+.tasks-state .tasks-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+}
+.tasks-state .tasks-completed{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: right;
+
+}
+.tasks-state .tasks-count span,
+.tasks-state .tasks-completed span{
+    color: rgba(15, 15, 15, 0.218);
+    padding: 1px 5px;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.tasks-state .tasks-count span{
+    color: crimson;
+}
+.tasks-state .tasks-completed span{
+    color: rgb(73, 138, 8);
+}
+.todo-container .tasks-content .task-box .new{
+    background-color: #77777700;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 90px;
+}
